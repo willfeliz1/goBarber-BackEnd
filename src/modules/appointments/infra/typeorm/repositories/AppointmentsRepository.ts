@@ -6,7 +6,9 @@ import Appointment from '@modules/appointments/infra/typeorm/entities/Appointmen
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
 
 class AppointmentsRepository implements IAppointmentsRepository {
-  constructor(private ormRepository: Repository<Appointment>) {
+  private ormRepository: Repository<Appointment>;
+
+  constructor() {
     this.ormRepository = getRepository(Appointment);
   }
 
