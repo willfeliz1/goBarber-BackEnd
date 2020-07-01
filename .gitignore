@@ -4,7 +4,9 @@ node_modules/
 build/
 temp/
 yarn.lock/
+coverage/
 
 tmp/*
 !tmp/.gitkeep
+
 
