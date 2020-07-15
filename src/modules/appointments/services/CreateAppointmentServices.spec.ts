@@ -35,9 +35,9 @@ describe('CreateAppointment', () => {
   });
 
   it('should be not able to create two appointments on the same time', async () => {
-    const appointmentDate = new Date(2020, 4, 10, 11);
+    const appointmentDate = new Date(2021, 4, 10, 11);
 
-    createAppointment.execute({
+    await createAppointment.execute({
       date: appointmentDate,
       user_id: 'user-id',
       provider_id: 'provider-id',
