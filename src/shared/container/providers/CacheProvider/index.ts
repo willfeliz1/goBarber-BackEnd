@@ -1,5 +1,3 @@
-// mapeamento entre os provider que tenho
-
 import { container } from 'tsyringe';
 import RedisCacheProvider from './implementations/RedisCacheProvider';
 import ICacheProvider from './models/ICacheProvider';
